@@ -8,7 +8,7 @@ const Footer = () => {
     <footer>
       <Container className="my-5">
         <Row>
-          <Col xl={3} md={3}>
+          <Col md={3} sm={6} xs={12}>
             <p style={styles.headingStyle}>OUR STORY</p>
             <p>
               Lorem ipsum dolors itamet,consectetur adipisc ingelit,seddoe
@@ -20,7 +20,7 @@ const Footer = () => {
               <FaInstagram size={25} />
             </div>
           </Col>
-          <Col xl={3} md={3}>
+          <Col md={3} sm={6} xs={12}>
             <div style={styles.linksContainer}>
               <p style={styles.headingStyle}>MORE...</p>
               <a>About Us</a>
@@ -29,7 +29,7 @@ const Footer = () => {
               <a>About Us</a>
             </div>
           </Col>
-          <Col xl={3} md={4}>
+          <Col md={3} sm={6} xs={12}>
             <div style={styles.linksContainer}>
               <p style={styles.headingStyle}>SHOP</p>
               <a>Bed Linen</a>
@@ -38,7 +38,7 @@ const Footer = () => {
               <a>Home Fragrances</a>
             </div>
           </Col>
-          <Col md={3}>
+          <Col md={3} sm={6} xs={12}>
             <p style={styles.headingStyle}>NEWSLETTER</p>
             <p>
               Subsribe to receive updates, access to execlusive deals, and more.
