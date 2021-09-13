@@ -25,7 +25,6 @@ const LandingPageScreen = () => {
       <BestSellersSection />
       <Services />
       <Testimonial />
-      <Hero />
       <Others />
     </>
   );

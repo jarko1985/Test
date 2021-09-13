@@ -5,6 +5,7 @@ import { Route } from "react-router-dom";
 import { BsSearch } from "react-icons/bs";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { FiUser } from "react-icons/fi";
+import logo from "../assets/logo.jpg";
 
 const Header = () => {
   return (
@@ -26,7 +27,7 @@ const Header = () => {
           </Navbar.Collapse>
           <LinkContainer to="/">
             <Navbar.Brand>
-              <h1>Logo</h1>
+              <Image style={styles.logoStyle} fluid src={logo} alt="logo" />
             </Navbar.Brand>
           </LinkContainer>
 
@@ -63,6 +64,9 @@ const styles = {
   space: {
     marginLeft: "10px",
     marginRight: "10px",
+  },
+  logoStyle: {
+    height: "80px",
   },
 };
 

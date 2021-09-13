@@ -1,13 +1,15 @@
 import React from "react";
-import { Container, Image } from "react-bootstrap";
+import { Button, Container, Image } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 
 const Category = ({ image, description }) => {
   return (
-    <>
+    <div style={{ textAlign: "center" }}>
       <Image src={image} alt="image category" fluid style={styles.imageStyle} />
-      <span style={styles.textStyle}>{description}</span>
-    </>
+      <Button style={styles.btnStyle} variant="light">
+        {description}
+      </Button>
+    </div>
   );
 };
 
@@ -18,11 +20,13 @@ const styles = {
     width: "100%",
     height: "400px",
   },
-  textStyle: {
-    position: "absolue",
+  btnStyle: {
+    color: "#000",
+    position: "relative",
+    border: "1px solid grey",
+    borderRadius: "0px",
+    marginTop: "-100px",
     zIndex: "99",
-    padding: "10px 5px 10px 5px",
-    backgroundColor: "#FFF",
   },
 };
 

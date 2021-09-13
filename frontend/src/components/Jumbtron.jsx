@@ -1,17 +1,31 @@
 import React from "react";
-import { Container, Image } from "react-bootstrap";
+import { Container, Image, Jumbotron } from "react-bootstrap";
 import heroImage from "../assets/hero.jpeg";
 
-const Jumbtron = ({ image, title }) => {
+const Jumbtron1 = ({ image, title }) => {
   return (
     <Container fluid>
-      <div>
-        <Image src={heroImage} fluid style={styles.imageStyle} />
-      </div>
-      <div style={styles.textStyle}>
-        <p>Super Soft, Stylish Bed Linen</p>
-        <p>Made With Love</p>
-      </div>
+      <Jumbotron
+        style={{
+          backgroundImage: `url(${heroImage})`,
+          height: "500px",
+          backgroundRepeat: "repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <p
+          style={{
+            position: "relative",
+            top: "10%",
+            textAlign: "center",
+            fontSize: "1.3rem",
+            color: "white",
+          }}
+        >
+          Super Soft, Stylish Bed Linen
+        </p>
+      </Jumbotron>
     </Container>
   );
 };
@@ -22,11 +36,8 @@ const styles = {
     width: "100%",
   },
   textStyle: {
-    position: "absolute",
-    top: "120px",
-    left: "45%",
-    textAlign: "center",
+    position: "relative",
   },
 };
 
-export default Jumbtron;
+export default Jumbtron1;

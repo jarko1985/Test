@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "BigCaslonMedium";
+  src: local("BigCaslonMedium"),
+    url("./fonts/BigCaslonMedium.ttf") format("truetype");
+  font-weight: bold;
+}
+
+body {
+  font-family: "BigCaslonMedium";
+}
